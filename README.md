@@ -3,6 +3,7 @@ A package that allows to calculate a math expressions
 <h2>Note:</h2>
 <p>
 At now it supports only five operators:
+</p>
 <ul>
 <li>+
 <li>-
