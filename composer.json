@@ -10,5 +10,8 @@
     ],
     "require": {
       "php" : ">=7.2"
+    },
+    "autoload": {
+        "psr-4": {"Starblust\\MathExpression": "starblust/math-expression"}
     }
 }
