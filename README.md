@@ -11,7 +11,7 @@ At now it supports only five operators:
 <li>/
 <li>^
 </ul>
-<ul>
+</ul>
 <h2>Installing:</h2>
 <li>via composer:
 <p> add this in your composer.json
