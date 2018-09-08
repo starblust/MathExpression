@@ -19,9 +19,12 @@ A package that allows to calculate a math expressions
 </ul>
 <h2>Using:</h2>
 <p>
+<code>
 $formula = '3-2^3+(1+1)';
+</code>
 <p>
 <pre>
+<code>
 $result = Starblust\MathExpression::calc($formula);<br>
 if ($result === null){
   echo Starblust\MathExpression::getError();
@@ -29,4 +32,5 @@ if ($result === null){
 else{
   echo $result;
 }
+</code>
 </pre>
