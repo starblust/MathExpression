@@ -3,7 +3,7 @@ namespace Starblust;
 
  /*
  ** calculating simple math expressions
- ** at now it support only five operators
+ ** at now it supports only five operators
  */
 
 class MathExpression {
