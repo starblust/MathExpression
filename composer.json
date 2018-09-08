@@ -2,11 +2,19 @@
     "name": "starblust/math-expression",
     "description": "A package that allows to calculate a math expressions",
     "type": "library",
+    "repositories": [
+      {
+        "type" : "vcs",
+        "url" : "https://github.com/starblust/MathExpression.git" 
+      }
+    ],
     "authors": [
         {
             "name": "Artemij",
             "email": "wayfar8r@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+      "php" : ">=7.2"
+    }
 }
