@@ -1,0 +1,12 @@
+{
+    "name": "starblust/math-expression",
+    "description": "A package that allows to calculate a math expressions",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Artemij",
+            "email": "wayfar8r@gmail.com"
+        }
+    ],
+    "require": {}
+}
