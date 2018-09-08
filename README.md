@@ -1,6 +1,6 @@
 # MathExpression
 A package that allows to calculate a math expressions
-<h2>Installing:</h2>
+<h2>Note:</h2>
 <p>
 At now it supports only five operators:
 <ul>
@@ -11,6 +11,7 @@ At now it supports only five operators:
 <li>^
 </ul>
 <ul>
+<h2>Installing:</h2>
 <li>via composer:
 <p> add this in your composer.json
 <pre>
