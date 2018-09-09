@@ -30,7 +30,7 @@ class MathExpression {
   ** param string $math_string
   ** return null|float - result of calculating
   */
-  public function calc(string $math_string) : ?float {
+  public static function calc(string $math_string) : ?float {
     self::$error = '';
     if (!$math_string){
       self::$error = 'empty math expression';
@@ -56,7 +56,7 @@ class MathExpression {
   ** param string $formula
   ** return array - list of tokens(numbers, operators)
   */
-  private function shunting_yard(string $formula) : ?array {
+  private static function shunting_yard(string $formula) : ?array {
     if (!$formula){
       self::$error = 'empty formula';
       return null;
@@ -72,7 +72,8 @@ class MathExpression {
       $token = $formula[$index];
       if (is_numeric($token) || $token === '.'){ // is number
         $num .= $token;
-        if (!is_numeric($formula[$index+1])){
+        $next_token = ($index+1) < $f_len ? $formula[$index+1] : '';
+        if ($next_token !== '.' && !is_numeric($next_token)){
           $output[] = $num;
           $num = '';
         }
