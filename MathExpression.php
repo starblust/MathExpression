@@ -14,7 +14,7 @@ class MathExpression {
   */
   private static $error = '';
 
-  /*
+  /**
   ** list of operators and their priority
   ** operator => priority
   ** @var array $operators
