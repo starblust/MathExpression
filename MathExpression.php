@@ -9,14 +9,15 @@ namespace Starblust;
 class MathExpression {
 
   /**
-  ** var string $error
   ** error description
+  ** @var string $error
   */
   private static $error = '';
 
   /*
   ** list of operators and their priority
   ** operator => priority
+  ** @var array $operators
   */
   private static $operators = [
     '^' => 4,
@@ -27,8 +28,8 @@ class MathExpression {
   ];
 
   /**
-  ** param string $math_string
-  ** return null|float - result of calculating
+  ** @param string $math_string
+  ** @return null|float - result of calculating
   */
   public static function calc(string $math_string) : ?float {
     self::$error = '';
@@ -45,7 +46,7 @@ class MathExpression {
   }
 
   /**
-  ** return string - error description
+  ** @return string - error description
   */
   public static function getError() : string{
     return self::$error;
@@ -53,8 +54,8 @@ class MathExpression {
 
   /**
   ** shunting yard
-  ** param string $formula
-  ** return array - list of tokens(numbers, operators)
+  ** @param string $formula
+  ** @return array - list of tokens(numbers, operators)
   */
   private static function shunting_yard(string $formula) : ?array {
     if (!$formula){
@@ -112,8 +113,8 @@ class MathExpression {
 
   /**
   ** reverse polish notation
-  ** param array $tokens
-  ** return null|float - result of calculating
+  ** @param array $tokens
+  ** @return null|float - result of calculating
   */
   private static function rpn(array $tokens) : ?float{
     if (!$tokens){
