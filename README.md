@@ -37,7 +37,7 @@ $formula = '3-2^3+(1+1)';
 <pre>
 <code>
 $result = Starblust\MathExpression::calc($formula);<br>
-if ($result === null){
+if ($result === ''){
   echo Starblust\MathExpression::getError();
 }
 else{
